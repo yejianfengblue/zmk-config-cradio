@@ -1,0 +1,18 @@
+# overrides for various configuration settings that make sense to have different defaults when this shield is used
+
+if SHIELD_CRADIO_LEFT
+# display name of the device over USB and BLE
+config ZMK_KEYBOARD_NAME
+	default "Cradio"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif

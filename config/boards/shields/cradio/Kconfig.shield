@@ -1,0 +1,7 @@
+# defines any additional Kconfig settings that may be relevant when using this keyboard
+
+config SHIELD_CRADIO_LEFT
+	def_bool $(shields_list_contains,cradio_left)
+
+config SHIELD_CRADIO_RIGHT
+	def_bool $(shields_list_contains,cradio_right)
